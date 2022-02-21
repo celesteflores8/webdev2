@@ -1,0 +1,79 @@
+/* Write all your custom CSS below this line  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zen+Dots&display=swap');
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+header {
+    border-bottom: 0.1em solid #ffff;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:1em;
+    max-width:500px;
+  
+}
+
+h1, h2, h3, p, a{
+    color:#ffff;
+}
+
+h1 {
+    font-size: 30pt;;
+}
+
+h1, h3 {
+    font-family: 'zen dots';
+    letter-spacing: 0.2rem;
+}
+
+
+h2, p, a {
+    font-family: 'poppins';
+}
+
+h3 {
+    background: rgba(130, 116, 207, 0.6);
+    margin:0;
+    padding: 1em;
+}
+
+p {
+    margin:0;
+    padding:1em 3em 0.5em 3em;
+    
+}
+
+section {
+    border-left: 1em solid #ffff;
+    /* border-bottom: 0.1em solid #ffff;
+    border-right: 0.1em solid #ffff; */
+    margin: 3em auto;
+    max-width: 50%;
+
+}   
+
+footer {
+    border-top: 0.1em solid #ffff;
+    text-align: center;
+    margin: auto;
+    
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+a:hover {
+    color: rgb(130, 116, 207 );
+}
