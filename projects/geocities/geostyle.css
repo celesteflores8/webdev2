@@ -1,0 +1,355 @@
+@font-face {
+    font-family:'minecraft';
+    src: url(Minecraft.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color:#ffff;
+    font-family: 'minecraft';
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+h2 {
+    color:#ffff;
+    font-family: 'minecraft';
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+#top {
+    background-image: url('gif/1space.gif');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:23em;
+}
+
+.first {
+    background-image: url('gif/1space.gif');
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    padding:30em;
+   
+}
+
+.second {
+    background-image: url('gif/aurora.gif');
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position:  center;
+    /* background-attachment: fixed; */
+    /* margin-top:20em; */
+    padding:23em;
+    /* position:absolute;
+    left:0; */
+}
+
+h1 {
+    color:#ffff;
+    font-family: 'minecraft';
+    letter-spacing: 0.5rem;
+    text-align: center;
+    margin-left: 1em;
+}
+
+h2 {
+    color:#ffff;
+    font-size: 5rem;
+    font-family: 'minecraft';
+    letter-spacing: 0.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+.second p {
+    color:#fff;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    font-family: 'minecraft';
+    padding:0;
+}
+
+.flycat img{
+    position: absolute;
+    max-width:300px;
+    top:65em;
+    left:35%;
+}
+
+.minikit img{
+    position: absolute;
+    max-width:150px;
+    top:90em;
+    left:12%;
+}
+
+
+.xwing img {
+    position: absolute;
+    right:10%;
+    top:45em;
+    max-width:200px;
+}
+
+
+.stardes img {
+    position: absolute;
+    left:10%;
+    top:50em;
+    max-width:200px;
+}
+
+
+.steve img {
+    position: absolute;
+    right:10%;
+    top:85em;
+    max-width:130px;
+}
+
+
+/*  menu gifs */
+.planet img {
+    position: absolute;
+    right:20%;
+    top:120em;
+    max-width:100px;
+}
+
+.planet2 img {
+    position: absolute;
+    left:20%;
+    top:120em;
+    max-width:100px;
+}
+
+.blackcat img {
+    position: absolute;
+    left:25em;
+    top:150em;
+    max-width:130px;
+}
+
+.fox img {
+    position: absolute;
+    right:33%;
+    top:147em;
+    max-width:60px;
+}
+
+.funny-monkee img {
+    position: absolute;
+    left:5%;
+    top:146em;
+    max-width:150px;
+  
+}
+
+.fish img {
+    position: absolute;
+    right:5%;
+    top:130em;
+    max-width:350px;
+}
+
+
+.nether img {
+    position: absolute;
+    right:6%;
+    top:143em;
+    max-width:125px;
+}
+
+.steve2 img {
+    position: absolute;
+    right:18%;
+    top:152em;
+    max-width:110px;
+}
+
+.legocoin img {
+    position: absolute;
+    left:38%;
+    top:145em;
+    max-width:150px;
+}
+
+
+/* minecraft section */
+#portal {
+    background-image: url('img/minebck.jpg');
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    padding:30em;
+}
+
+.inventory img {
+    position: absolute;
+    right:33%;
+    top:170em;
+    max-width:500px;
+}
+
+.bee img {
+    position: absolute;
+    right:10%;
+    top:165em;
+    max-width:300px;
+}
+
+.zombie img {
+    position: absolute;
+    left:15%;
+    top:172em;
+    max-width:200px;
+}
+
+.pig img {
+    position: absolute;
+    right:33%;
+    top:205em;
+    max-width:150px;
+}
+
+.sheep img {
+    position: absolute;
+    left:5%;
+    top:190em;
+    max-width:100px;
+}
+
+.cow img {
+    position: absolute;
+    right:5%;
+    top:190em;
+    max-width:100px;
+}
+
+.creeper img {
+    position: absolute;
+    left:10%;
+    top:198em;
+    max-width:300px;
+}
+
+.enderman img {
+    position: absolute;
+    right:5%;
+    top:190em;
+    max-width:500px;
+}
+
+.iron img {
+    position: absolute;
+    right:50%;
+    top:190em;
+    max-width:100px;
+}
+
+/* BACK TO MENU  */
+
+.diamond img {
+    position: fixed;
+    right:0;
+    bottom:0;
+    max-width:100px;
+}
+
+/* starwars */
+#starwars {
+    background-image: url('img/legostar.png');
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    padding:30em;
+}
+
+.r2d2 img {
+    position: absolute;
+    left:5%;
+    top:240em;
+    max-width:200px;
+}
+
+.title img {
+    position: absolute;
+    right:15%;
+    top:240em;
+    max-width:200px;
+}
+
+
+.awingtrs img {
+    position: absolute;
+    right:30%;
+    top:255em;
+    max-width:200px;
+}
+
+.luke img {
+    position: absolute;
+    left:10%;
+    top:265em;
+    max-width:400px;
+}
+
+
+.awing img {
+    position: absolute;
+    right:0;
+    top:265em;
+    max-width:1000px;
+}
+
+.obi img {
+    position: absolute;
+    left:25%;
+    top:235em;
+    max-width:200px;
+}
+
+
+.ending {
+    background-image: linear-gradient(#000000, #000000, #ffff);
+    background-attachment: fixed;
+    background-color: #fff;
+    padding:10em;
+}
+
+.ending p{
+    font-family: 'poppins';
+    font-size: 1.5rem;
+    text-align: center;
+ 
+}
+
+.cat {
+    margin: 3em auto;
+    width:10%;
+}
+
+.cat img {
+    max-width:200px;
+}
+
+.omori {
+    max-width: 900px;
+}
