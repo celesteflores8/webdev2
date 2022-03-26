@@ -1,0 +1,153 @@
+@font-face {
+    src:url('Poppins-Light.ttf');
+    font-family:poppinslight;
+    font-weight:200;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  body {
+    background-color: #000000;
+    margin: 13em;
+    padding: 0;
+    font-family:'poppinslight';
+  }
+
+  h1 {
+    color: #fff;
+    font-size:2.5rem;
+    margin:1.5em auto;
+    text-align: center;
+  }
+
+  h2 {
+    color:#fff;
+    font-size: 2rem;
+    width:50%;
+    margin: 1em auto;
+    text-align: center; 
+    animation: wait 4s infinite;
+  }
+
+ 
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a h2:hover {
+   color: rgb(122, 78, 199);
+  }
+
+  .back {
+   position:absolute;
+   top:0;
+   left:0;
+   margin: 3em;
+  }
+
+
+  /* LOADING ANIMATION */
+  .loading-animation{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+
+  .square {
+    width:5rem;
+    height:1rem;
+    background-color:#FFD3B5;
+    animation: load 5s forwards;
+ }
+
+ .square:nth-child(1) {animation-iteration-count: 1; background: #96B0ED;}
+ .square:nth-child(2) {animation-iteration-count: 3; background: #CC9DF0;}
+ .square:nth-child(3) {animation-iteration-count: 5; background: #FF9DE2;}
+ .square:nth-child(4) {animation-iteration-count: 7; background:#FFBABF;}
+ .square:nth-child(5) {animation-iteration-count: 9; background: #FFD3B5;}
+
+ 
+ @keyframes load {
+    25%  {background-color:rgb(0, 0, 0); }
+    50%  {background-color:rgb(0, 0, 0); }
+    100%  {background-color:rgb(0, 0, 0)55, 255, 255;}
+}
+
+.waiting-animation{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ;
+    /* display: inline-block; */
+}
+
+.circle {
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    border:0.5em solid #FFD3B5;
+    animation: scale 3s infinite;
+ }
+
+.a {border: 1em solid #96B0ED;}
+.b {border: 1em solid #CC9DF0;}
+.c {border: 1em solid #FF9DE2;}
+.d {border:1em  solid #FFBABF;}
+.e {border: 1em  solid #FFD3B5;}
+
+@keyframes scale {
+    0% {
+        opacity:0;
+        transform: scale(0.1);
+    }
+      
+    25% {
+        opacity:1;
+    }
+
+    50% {
+        opacity:2;
+    }
+      
+    75% {
+        opacity:1;
+    }
+      
+    100% {
+        opacity:0;
+        transform: scale(1);
+    }
+}
+
+@keyframes wait {
+    0% {
+        opacity:0;
+        transform: scale(0.8);
+    }
+      
+    25% {
+        opacity:1;
+    }
+
+    50% {
+        opacity:2;
+    }
+      
+    75% {
+        opacity:1;
+    }
+      
+    100% {
+        opacity:0;
+
+    }
+}
+    
