@@ -1,0 +1,315 @@
+@font-face {
+    font-family:'gyahegi';
+    src: url(Gyahegi.otf);
+}
+
+@font-face {
+    font-family:'butler';
+    src: url(Butler_Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+main {
+    
+    color:#fff;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5em;
+    height: 100vh;
+    top:0;
+    left:0;
+    width:300px;
+    border-right: solid #fff 1px;
+    
+}
+
+
+.content {
+    margin-left: 300px;
+}
+
+
+h1, h2 {
+    font-family:'butler';
+}
+
+
+h1 a {
+    font-size: 2.5rem;
+    font-family:'butler';
+    text-decoration: none;
+    /* display: inline; */
+}
+
+
+h2 {
+    font-size: 1.9rem;
+}
+
+p, a {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color:#fff; 
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+ 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 0.4rem;
+}
+
+nav {
+    margin-top: 3em;
+}
+
+img {
+    width:100%;
+    /* max-width:400px; */
+    height:auto;
+    /* max-width: 400px; */
+}
+
+#about {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: flex-end;
+    justify-content: space-evenly;
+    /* flex:1; */
+
+    /* background-color: antiquewhite; */
+    /* padding: 5em; */
+    border-bottom: solid #000000 1px;
+}
+
+#about img {
+    max-width:300px;
+    flex:1;
+}
+
+#about p {
+    margin-left: 1em;
+    flex:1;
+   
+}
+
+#about,#work, #resume {
+    padding: 3em 5em 5em 5em;
+    border-bottom: solid #fff 1px;
+}
+
+#contact {
+    padding: 3em 5em 5em 5em;
+}
+
+.content h2 {
+    margin-bottom: 1.5em;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3em;    
+}
+
+
+.socials {
+   margin-top:1rem;
+}
+
+
+main nav:nth-of-type(2) {
+    display:none;
+}
+
+
+
+    /* HAM MOBILE MENU */
+    #menuToggle {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; 
+        z-index: 2; 
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: #fff;
+        border-radius: 3px;
+        
+        z-index: 1;
+        
+        transform-origin: 4px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #fff;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 1em 0 0;
+        padding-left:5em ;
+        padding-right:20em ;
+        padding-top: 8em;
+        padding-bottom: 8em;
+        right: -2em;
+        
+        background: #000000;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+        list-style-type: none;
+    }
+
+
+    #menuToggle input:checked ~ ul {
+        transform: none;
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 768px) {
+    #menu {
+        transform: none;
+        opacity: 0;
+
+        transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+/* MOBILE VERSION */
+@media only screen and (max-width:920px) {
+   
+
+    main nav:nth-of-type(1) {
+        display:none;
+      }
+
+    main nav:nth-of-type(2) {
+        display:list-item;
+    }  
+
+    main {
+        /* display: block; */
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 0.9em;
+    }
+
+    .menu {
+        padding:0;
+        height:0;
+        position: static;
+    }
+
+    h1 a {
+        font-size: 1.3rem;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+
+    #about, #work, #contact {
+        padding: 1em;
+    }
+
+
+    
+}
+
