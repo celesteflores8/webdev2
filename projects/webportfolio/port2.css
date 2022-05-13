@@ -33,32 +33,12 @@ body {
     background-image: url(images/noise.png);
     background-size:cover;
     background-attachment: fixed;
-    /* display: block; */
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    /* background-blend-mode:hard-light; */
-    /* opacity:0.5; */
-    /* top: 0;
-    left: 0; */
-    
-    /* pointer-events: none; */
+
 }
  
- /* .bg {
-    background-image: url(images/noise.png);
-    background-size: cover;
-    position: fixed;
-    display: block;
-  
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    
-    pointer-events: none;
-  
-}  */
 
 main {
     color: #F2EDE4;
@@ -78,6 +58,7 @@ h1 a {
     font-size: 1.5rem;
     font-family: 'telegraf';
     text-decoration: none;
+    font-weight: bold;
     /* display: inline; */
 }
 
@@ -122,13 +103,13 @@ img {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 1.5rem;
     row-gap: 2em;
 }
 
-
+/* ABOUT SECTION */
 #about img {
     max-width: 400px;
     margin-bottom: 1em;
@@ -168,12 +149,15 @@ img {
 
 .socials {
     margin-top: 1rem;
+   
 }
 
 #contact {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
+ 
+    border-top: solid #F2EDE4 1px;
 }
 
 #contact h2 {
@@ -221,11 +205,6 @@ img {
 
 
 
-
-
-
-
-
 /* OVERLAY IMGS */
 .project {
     position: relative;
@@ -259,18 +238,20 @@ img {
 
 .project:hover .product.image {
     opacity: 0.3;
+ 
 }
 
 .project:hover .overlay {
     opacity: 1;
+   
 }
 
 .text {
     /* background-color: #04AA6D; */
     color:#000000;
-    font-size: 1rem;
-    padding-bottom:2.5em;
-    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 2rem;
+    padding-bottom:0em;
+    font-family: 'telegraf', sans-serif;
   }
 
 
@@ -297,9 +278,15 @@ img {
   } */
 
 
+
+  /* RESUME */
 .info h2 {
     margin-top: 1em;
     margin-bottom: 0.3em;
+}
+
+#resume a{
+    text-decoration: underline;
 }
 
 .info p:nth-of-type(2) {
@@ -319,26 +306,83 @@ img {
     margin-bottom:1em;
 }
 
-.columbia p:nth-of-type(2) {
+.columbia p:nth-of-type(1) {
     font-weight: bold;
 }
 
-.joliet p:nth-of-type(2) {
+.joliet p:nth-of-type(1) {
     font-weight: bold;
 }
 
-.romeoville p:nth-of-type(2) {
+.romeoville p:nth-of-type(1) {
     font-weight: bold;
 }
 
-.summary h3 {
+.exp h3 {
     font-size: 1.4rem;
     margin-bottom:1em;
 }
 
-.summary p {
-    width: 50%;
+.exp p:nth-of-type(1){
+    font-weight: bold;
 }
+
+.exp {
+    margin-bottom: 3em;
+}
+
+.skills h3 {
+    margin-bottom:1em ;
+}
+
+ul li {
+    font-family: 'telegraf';
+}
+
+.list   {
+    display: flex;
+    gap:5em;
+}
+
+
+/* BASECO DETAILS*/
+
+
+
+/* ALBUM REMIX SECTION */
+.oldalbums {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 2em;
+}
+
+.oldalbums p {
+    margin-bottom: 1em;
+   
+}
+
+.newalbums p{
+    margin-bottom: 1em;
+}
+
+.newalbums {
+    margin-bottom: 2em ;
+}
+
+.poster p {
+    margin-bottom: 1em;
+
+}
+
+.poster {
+    margin-bottom: 2em;
+}
+
+.merch p{
+    margin-bottom: 1em;
+    
+}
+
 
 
 
@@ -415,24 +459,30 @@ img {
 }
 
 #menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 1em 0 0;
+    position:fixed;
+    width: 100vw;
+    margin: 0;
     padding-left: 5em;
     padding-right: 20em;
     padding-top: 8em;
     padding-bottom: 8em;
     right: -2em;
+    top: 0;
+    left: 0;
+    /* height: 100vh; */
+   
 
-    background: #000000;
+    background: #161616;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
+  
 
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+
 }
 
 #menu li {
@@ -447,76 +497,27 @@ img {
     opacity: 1;
 }
 
+
 @media screen and (max-width: 919px) {
     #menu {
         transform: none;
         opacity: 0;
-
+        
         transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
 
 }
 
-header nav:nth-of-type(1) {
-    display:none;
-}
 
 
 
+ 
+/* LAPTOP */
 @media screen and (min-width: 920px) {
-
+/* 
     header nav:nth-of-type(1) {
         display: list-item;
-    }
-
-    header nav:nth-of-type(2) {
-        display: none;
-    }
-
-
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 5em;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        width: 300px;
-        border-right: solid #fff 1px;
-
-        /* .desktop-menu {
-            position: fixed;
-            left: 0;
-            top: 0;
-            height: 100vh;
-            width: var(--left-column-width);
-        } */
-
-    }
-
-    .content {
-        /* margin-left: var(--left-column-width); */
-        margin-left: 300px;
-    }
-
-  
-    .menu {
-        padding: 3.5em 1em 1em 1.5em;
-    }
-
-    h1 a {
-        font-size: 2.5rem;
-    }
-
-    header ul li a {
-        font-size: 1.4rem;
-       list-style-type: none;
-    }
-
-    header ul li {
-        margin-bottom: 1em;
-    }
+    } */
    
 
     .content h2 {
@@ -536,29 +537,27 @@ header nav:nth-of-type(1) {
         /* border-bottom: solid #F2EDE4 1px; */
     }
 
+    /* ABOUT SECTION */
     #about {
         display: flex;
         align-items:flex-end;
-        /* justify-content:space-evenly; */
-        gap: 10em;
+        gap: 6em;
     }
 
     #about img {
-        max-width: 360px;
+        max-width: 320px;
         margin:0; 
         display: list-item;
        
     }
     
     .para {
-        width:50%;
+        flex-shrink:1;
         
     }
 
     .para p:nth-of-type(1) {
-
         font-size: 3.4rem;
-     
      
     }
 
@@ -579,6 +578,29 @@ header nav:nth-of-type(1) {
         
     }
 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    /* IMAGE OVERLAYS */
+    .text {
+        /* background-color: #04AA6D; */
+        color:#000000;
+        font-size: 3rem;
+        padding-bottom:0em;
+        font-family: 'telegraf', sans-serif;
+    }
+
+    .overlay a {
+        text-decoration: none;
+    }
+
+
+
+    /* RESUME */
     #resume {
         display: flex;
         flex-direction: column;
@@ -592,18 +614,7 @@ header nav:nth-of-type(1) {
         max-width: 900px;
     }
 
-    /* IMAGE OVERLAYS */
-    .text {
-        /* background-color: #04AA6D; */
-        color:#000000;
-        font-size: 3rem;
-        padding-bottom:2em;
-        font-family: 'telegraf', sans-serif;
-    }
 
-    .overlay a {
-        text-decoration: none;
-    }
 
     /* PROJECT PAGE INFO */
     .details h2 {
@@ -614,4 +625,87 @@ header nav:nth-of-type(1) {
         width: 50%;
     }
 
+    /* ALBUM SECTION */
+    .oldalbums img {
+        max-width: 400px;
+        flex-direction: row;
+     
+    }
+
+    .oldalbums {
+        margin-bottom: 3em;
+    }
+
+    .oldalbums p {
+        font-size: 1.3rem;
+    }
+    
+    .newalbums p{
+       font-size: 1.3rem;
+    
+    }
+    
+    .poster p {   
+        font-size: 1.3rem;
+    
+    }
+    
+    .merch p{
+        font-size: 1.3rem;
+    
+    }
+}
+
+
+/* takes desk-menu off with desk-layout */
+@media screen and (max-width: 1024px)  {
+    
+    header nav:nth-of-type(1) {
+        display:none;
+    }
+
+
+}
+
+
+/* adds in desk-menu and enbales desk-layout */
+@media screen and (min-width: 1025px) {
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5em;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 300px;
+        border-right: solid #fff 1px;
+
+    }
+
+    .content {
+        margin-left: 300px;
+    }
+
+    .menu {
+        padding: 3.5em 1em 1em 1.5em;
+    }
+
+    h1 a {
+        font-size: 2.5rem;
+    }
+
+    header ul li a {
+        font-size: 1.4rem;
+       list-style-type: none;
+    }
+
+    header ul li {
+        margin-bottom: 1em;
+    }
+
+     header nav:nth-of-type(2) {
+        display: none;
+    }
 }
