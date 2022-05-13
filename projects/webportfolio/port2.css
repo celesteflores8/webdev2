@@ -177,7 +177,7 @@ img {
 
 }
 
-#contact a:nth-of-type(2) {
+#contact a:nth-of-type(1) {
     font-weight:bold;
     font-size: 1rem;
 }
