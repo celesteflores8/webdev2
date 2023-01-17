@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description=" content="BASECO | Web Design II Rebrand Project">
+    <link rel="stylesheet" href="test.css">
+
+    <title>Cart | BASECO </title>
+    <link rel="icon"  href="images/baseco-logo.png">
+
+</head>
+
+<body>
+    <main>
+        <div class="wrapper2">
+        
+          <header class="other">
+              <div class="logo"><a href="index.html"><h1>BASECO</h1></a></div>
+  
+              <!-- DESKTOP NAV -->
+              <nav>
+                <ul class="desktop-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">COLLECTIONS</a>
+                        <div class="dropdown-content"> 
+                            <a href="collection4.html">COLLECTION IV</a>
+                            <a href="collection3.html">COLLECTION III</a>
+                        </div>
+                    </li>
+                    <li><a href="accessories.html">ACCESSORIES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+  
+              <!-- HAM MENU -->
+              <nav role="navigation" class="other">
+                  <div id="menuToggle">
+              
+                      <input type="checkbox"/>
+          
+                      <span></span>
+                      <span></span>
+                      <span></span>
+          
+                      <ul id="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li>
+                            <a href="collection4.html">COLLECTIONS</a>
+                            <div class="content"> 
+                                <a href="collection4.html">COLLECTION IV</a>
+                                <a href="collection3.html">COLLECTION III</a>
+                            </div>
+                        </li>
+                        <li><a href="accessories.html">ACCESSORIES</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+        
+                    </ul>
+                  </div>
+              </nav>
+  
+              <a class="cart" href="cart.html">CART</a>
+              
+          </header>
+        
+        </div>
+
+        <div class="small-container cart-page">
+
+            <table>
+                <tr>
+                    <th>PRODUCT</th>
+                    <th>QUANTITY</th> 
+                    <th>SUBTOTAL</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/co1.5.jpg" alt="">
+                            <div>
+                                <p>BLACK DRIFTER LONG SLEEVE TOP</p>
+                                <small>Price: $140.00 </small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$140.00</td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/co10.5.jpg" alt="">
+                            <div>
+                                <p>BLACK LINEN PANTS</p>
+                                <small>Price: $195.00 </small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$195.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+
+                <table>
+                    <tr>
+                        <td>Subtoal</td>
+                        <td>$335</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Tax</td>
+                        <td>$3.95</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total</td>
+                        <td>$338.95</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </main>
+    
+      <!-- FOOTER -->
+    <footer>
+        <ul id="footernav">
+            <li><a href="mailto:">CONTACT</a></li>
+            <li><a href="#">SIZING</a></li>
+            <li><a href="#">SHIPPING</a></li>
+
+        </ul>
+
+        <section id="socials">
+            <ul>
+            <li><a href="https://www.instagram.com/staatsballett/" target="_blank">INSTAGRAM</a></li>
+            <li><a href="https://twitter.com/staatsbaiiett" target="_blank">TWITTER</a></li>
+            </ul>
+        </section>
+
+        <!-- EMAIL SIGN UP  -->
+        <div class="sign-up">
+            <form action="action_page.php">
+                <div class="row">
+                <div class="col-25">
+                    <label for="fname">Sign up for the latest updates.</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="email" placeholder="Your email..">
+                </div>
+                </div>
+
+                <div class="row">
+                <input type="submit" value="SIGN UP">
+                </div>
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>

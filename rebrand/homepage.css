@@ -1,0 +1,695 @@
+
+@font-face {
+  src:url('Poppins-Light.ttf');
+  font-family:poppinslight;
+  font-weight:200;
+}
+
+@font-face {
+  src:url('Butler_Bold.otf');
+  font-family:butler;
+  font-weight:400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(218, 214, 206);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top:1.5em;
+  padding:1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color:#fff;
+}
+
+h1, h2, h3 {
+  font-family:'butler';
+}
+
+p {
+  font-family:'poppinslight';
+}
+
+
+
+img {
+  width:100%;
+  height: auto;
+}
+
+/* .item3, .item4, .item5 {
+  max-width:500px;
+  object-fit: fill;
+} */
+
+header {
+  background-image: url(images/rebrandhero2.jpg);
+  height: 100vh; 
+  margin:0;
+  padding:0;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: top center; 
+  /* background-attachment: fixed;  */
+}
+
+
+.header2 {
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding:1em;
+
+}
+
+header nav:nth-last-child(1) {
+  order:1;
+  margin-left: -6em;
+}
+
+h1 {
+  order:2;
+
+}
+
+.cart {
+  order:3;
+  /* margin-left: auto; */
+}
+
+
+/* footer things */
+footer {
+  margin-top: 8em;
+  padding:1em;
+  border-top: 0.01rem solid #000000;
+  text-align: center;
+  
+}
+
+#footernav li, #socials li {
+  list-style-type: none;
+  margin:1.3em;
+}
+
+#footernav, #socials  {
+  margin: 4em auto;
+
+}
+
+#footernav a, #socials a {
+  color:#000000;
+  font-size: 1rem;
+  font-family: 'poppinslight';
+  text-decoration: none;
+}
+
+.grid-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat (3, 5vw);
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+}
+
+.item1  {      /* NEW COLLECTIOn */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:1;
+  grid-row-end:2;
+ 
+}
+
+.item2 {  /* PARAGRPAH */
+  font-size:0.8em;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item3 { /* first IMAGE */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+.item3 {
+ 
+}
+
+.item4 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+ 
+}
+
+
+
+
+/* this includes the slide show and title "SHOP NOW" */
+.shop{
+  margin-top:5em;
+}
+
+hr {
+  /* color:#000000; */
+  border:0;
+  border-top:2px solid #000000;
+  width:auto;
+  margin: 0.5em auto;
+  /* position: absolute;
+  left:-1;
+  right:-1; */
+ 
+}
+
+/* SHOP NOW */
+.shop h3 {
+  font-size: 1.5rem;
+ }
+
+
+
+/* SIGN UP FORM */
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  letter-spacing: 0.rem;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px;
+  display: inline-block;
+  font-family: 'poppins';
+}
+
+/* Style the SUBSCRIBE button */
+input[type=submit] {
+  background-color: #555251;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+
+}
+
+input {
+  margin:1em auto;
+}
+
+/* Style the container */
+.sign-up {
+  margin-top: 5em;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+} 
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* LINKSS */
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-family: 'poppinslight', sans-serif;
+}
+
+a:hover {
+  color: tomato;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+/* begining of ham menu MOBILE ONLY */
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 0;
+  left:0;
+  z-index: 1;
+  margin-left:1rem;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -20px;
+  left: -1px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span {                
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 1; 
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0px;
+  padding:0px 295px 390px 40px;
+  padding-top: 125px;
+  background:rgb(218, 214, 206);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+ padding:10px 0;
+ font-size:1.3rem;
+ margin: 0 0 0.5em 1em;
+}
+  
+#menu li a {
+ color:#555251;
+ list-style-type: none;
+ text-decoration: none;
+ font-family: 'poppinslight', sans-serif;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+#menu {
+ margin: -100px 0 0 -50px;
+}
+
+
+
+/* SLIDE IMAGES */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  max-width: 100%;
+  margin: 1.5em 0 auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(170, 170, 169, 0.8);
+}
+
+/* Caption tex- MIGHT USE LATER? */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #9c968d;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+.desktop-nav{
+  display: none;
+}
+
+.display-imgs {
+  display: none;
+}
+
+.flexcontainer {
+  display:none;
+}
+
+.desktop {
+  display: none;
+}
+
+
+
+/* BEGINING OF DESKTOP VERSION */
+
+/* FOR DESKTOP */
+@media screen and (min-width:601px) and (max-width:2600px) {
+  
+  main {
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  header nav:nth-last-child(1) {
+    display: none;
+  }
+
+  .grid-container {
+    display: none;
+  }
+
+  header {
+    background-position: center;
+    margin:0;    
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5em 2.3em 0 2.3em;
+  }
+
+/* DESKTOP NAVIGATION */
+  /* menu */
+
+
+
+  .desktop-nav {
+    display: list-item;
+    list-style-type: none;
+    margin-top:0.5em;
+  }
+  
+  .desktop-nav li {
+    margin-bottom:0.5em;
+  }
+
+  .desktop-nav li a {
+    color: #ffff;
+    font-family:'poppinslight', sans-serif;
+    text-decoration:none;
+    font-size:1rem;
+    /* margin:2.4em; */
+    letter-spacing:3px;
+ 
+  }
+
+  .desktop-nav li a:hover {
+  /* color: #232323; */
+    text-decoration: underline;
+  }
+
+  h1 {
+    cursor: pointer;
+    margin-top:-1.5em;
+    margin-left: -2.3em;
+    font-size: 2.5rem;
+  }
+
+  .cart {
+   margin-top: -3.8em;
+   font-size: 1.1rem;
+  }
+  
+
+
+ 
+  
+
+/* NEW COLLECTION SECTION */
+  .desktop {
+    display: list-item;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+
+/* SHOP NOW SECTION DESK */
+  .display-imgs{
+    display: list-item;
+  }
+
+  .flexcontainer {
+    display: flex;
+    margin-top:1.5em;
+   
+  }
+
+  .item5 {
+    max-width: `1000px;
+  }
+
+  /* .item3, .item4, .item5 {
+    width: 100%;
+  
+  } 
+
+  .item3 img, .item4 img, .item5 img {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .item1, .item2 {
+    margin: 0;
+    list-style: none;
+  }
+
+  .item1 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .item2  {
+    width: 50%;
+    font-size: 0.9rem;
+  } */
+
+
+  /* DESKTOP "SHOP NOW" */
+  .slideshow-container  {
+    display: none;
+  }
+
+  script {
+    display: none;
+  }
+
+  .display-imgs  {
+    width: 100%;
+    display: flex;
+    justify-content: center
+    
+    /* object-fit: cover; */
+  }
+
+  .display-imgs img {
+    margin: 2em;
+    width: 100%;
+    padding: ;
+    max-width: 300px;
+  }
+
+
+  footer {
+    margin-top:0;
+    padding:2em;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    /* grid-template-rows: repeat( 2, 5vw); */
+    grid-column-gap: 10px;
+  }
+
+  #footernav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end:1;
+    /* font-size: 2.5vw; */
+    padding:0;
+    margin: 0;
+  }
+
+  #socials {
+    padding:0;
+    margin: 0;
+    justify-self: center;
+  }
+
+  .sign-up {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* justify-self: right; */
+    padding:0;
+    margin: 0;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+
+  .col-25, .col-75, .row {
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    justify-content: flex-end;
+  
+}
+
