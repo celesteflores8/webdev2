@@ -21,7 +21,7 @@ body {
     /* margin:2em; */
 	font-family: 'Poppins', Arial, Helvetica,sans-serif;
     background-color: #ffffff;
-    background-image: url(webdev2/portfolio/img/bck-web.JPG);
+    background-image: url(/portfolio/css/bck-web.JPG);
     background-size:auto;
     color:#e1e0ef;
     font-size: 0.8rem;
